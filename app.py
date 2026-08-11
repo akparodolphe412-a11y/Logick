@@ -1,4 +1,4 @@
-import hashlib
+timport hashlib
 import os
 import sqlite3
 import streamlit as st
@@ -445,3 +445,21 @@ else:
     }
 </style>
 """, unsafe_allow_html=True)
+import streamlit as st
+
+# Cette configuration force la disparition des éléments de menu de Streamlit
+hide_streamlit_style = """
+    <style>
+    /* Masque le bouton Fork et le logo GitHub */
+    div[data-testid="stToolbar"] {
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+    /* Masque le menu principal et le footer */
+    #MainMenu {visibility: hidden !important;}
+    footer {visibility: hidden !important;}
+    header {visibility: hidden !important;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
