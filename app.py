@@ -1,4 +1,4 @@
-timport hashlib
+import hashlib
 import os
 import sqlite3
 import streamlit as st
