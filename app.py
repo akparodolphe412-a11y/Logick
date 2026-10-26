@@ -418,7 +418,7 @@ else:
 
     # --- 10. TRÉSORERIE ---
     elif current_view == "Trésorerie":
-        st.title("💰 Trésorerie")
+        st.title("Trésorerie")
         st.info("Suivi des comptes bancaires, rapprochements et liquidités globales.")
 
     # --- 11. RH ET PAIE ---
